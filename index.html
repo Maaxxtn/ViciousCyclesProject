@@ -1,66 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-      body {
-        background-color: #E7FBFB;
-      }
-      
-      header {
-        font-size: 4em;
-        text-align: center;
-        color: #010B5B;
-      }
-      </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
     <title>Vicious Cycles</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-      <h1>Vicious Cycles</h1>
-        <nav>
-          <img src="logo" alt="Vicious cycles Logo" height="" width="">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="services.html">Services</a></li>
-              <ul>
-                <li><a href="maintenance.html">Maintenance</a></li>
-                <li><a href="foodandbeverage.html">Food &amp; Beverages</a></li>
-              </ul>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="events.html">Events</a></li>
-          </ul>
-        </nav>
-      </header>
-      
-      <main>
-        <section>
-          <img src="" alt="Bicycle storefront">
-          <h2>about us</h2>
-          <p>lorem ipsum</p>
-        </section>
-        
-        <section>
-         <!-- email newsletter signup form  -->
-        </section>
-          
-      </main>
-      
-      <footer>
-        <ul>
-          <li><img src="" alt="vicious cycles logo"></li>
-          <li><img src="logos/facebook/f_logo_RGB-Blue_512.png"></li>
-          <li><img src="logos/twitter/twitter_logo.png"></li>
-          <li><img src="logos/instagram/Instagram_Glyph_Gradient.png"></li>
-          <li>address</li>
-          <li>phone number</li>
-        </ul>
-      </footer>
+      <img
+        id="viciouslogo"
+        src="logos/vicious-cycles-logo.png"
+        alt="vicious cycles Logo"
+      />
+      <!-- its okay for nav to be an ul with css properties that take away bullets and also okay for it to be inside or outside of header semantically -->
+      <nav class="nav">
+        <a href="#" target="_self">Home</a>
+        <a href="#" target="_self">Shop</a>
+        <a href="#" target="_self">Services</a>
+        <a href="#" target="_self">Blog</a>
+        <a href="#" target="_self">Events</a>
+      </nav>
+    </header>
 
-</body>
+    <main>
+      <section>
+        <img
+          class="vicious-shop"
+          src="images/home_images/bikeshop.jpeg"
+          alt="inside of bicycle shop"
+        />
+        <h1>About Vicious Cycles</h1>
+        <p>
+          At Vicious Cycles we value community and experiences. We want to share
+          the world of biking with you, whoever you are, so we established to be
+          a different kind of bike shop. We strive to be a bike shop that
+          provides a sense of community. We don't want to be just a place to
+          shop at, but a place to trade, learn, make friendships, and hang out.
+          Inspired to create events and community around cycling and bring back
+          being in the present moment of a fast paced world that views growth as
+          sales and not experiences.
+        </p>
+      </section>
+    </main>
+
+    <aside>
+      <img
+        class="float-image-right"
+        src="images/shop_images/bike_inventory.jpeg"
+        alt="bicycles line up with sale tags"
+      />
+      <p>
+        Hang around and be sure to check out our extensive inventory online and
+        inside the shop! We also offer maintenance services and provide easy
+        pick up times and scheduling. Or, just stop by and have lunch or a
+        coffee before, after, or, just a little break, in the middle of a
+        lengthy ride.
+      </p>
+    </aside>
+    <!-- background opaque shop image design idea note. or maybe nav bar is tall and long and contains an opaque background image. -->
+
+    <!-- <section>
+      <h2>Subscribe to Our Newsletter</h2>
+      email newsletter signup form. maybe add to services html page instead of here for more depth on other pages and not just a heavy home page  -->
+
+    <section>
+      <blockquote><em>"A Bike For Everyone"</em></blockquote>
+
+      <img
+        class="float-image-left"
+        src="images/home_images/allbiketypes.jpeg"
+        alt="different styled bicycles lined up outside"
+      />
+      <h3>Vicious Cycles' Brand of The Month:</h3>
+      <a href="https://surlybikes.com/" target="_blank">Surly Bikes</a>
+    </section>
+
+    <h2>Contact Us:</h2>
+    <p>
+      Feel free to contact us with any questions or concerns about orders. We
+      will respond via your preferred form of contact within 24-48 business
+      hours. We value our customers and we are dedicated to helping you find the
+      perfect bike for you. If it isn't working out, we offer 30 day money back
+      guarantees. Unsure of what type of bike you want? Swing by or give us a
+      call and we will be glad to help you decide!
+    </p>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/"
+            ><img
+              class="socialmedialogo"
+              src="logos/facebook/f_logo_RGB-Blue_512.png"
+              alt="facebook logo"
+          /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/i/flow/login"
+            ><img
+              class="socialmedialogo"
+              src="logos/twitter/twitter_logo.png"
+              alt="twitter logo"
+          /></a>
+        </li>
+        <li>7280 North Park Drive, Raleigh NC, 27610</li>
+        <li>(919) 453-9822</li>
+      </ul>
+    </footer>
+  </body>
 </html>
